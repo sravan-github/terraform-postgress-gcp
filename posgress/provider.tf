@@ -1,4 +1,4 @@
 provider "google" {
-  credentials = "${file("/home/sravangcp/key.json")}"
-  project     = "my-project-id"
+  credentials = "${file("/home/sravangcp/gcp-key.json")}"
+  project     = "dolphine-project"
 }
