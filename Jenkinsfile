@@ -10,11 +10,11 @@ pipeline {
     stage('Hello') {
       steps {
         sh '''
-            git clone https://github.com/sravan-github/cloudsql-mysql-terraform-module.git
+            git clone https://github.com/sravan-github/terraform-postgress-gcp.git
             ls -ltr
             pwd
             export GOOGLE_APPLICATION_CREDENTIALS="./gcp-key.json"
-            cd terraform-gcp-mysql-main/example
+            cd example
             ls -ltr
             terraform init
             terraform plan
