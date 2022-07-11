@@ -14,7 +14,7 @@ pipeline {
             ls -ltr
             pwd
             export GOOGLE_APPLICATION_CREDENTIALS="./gcp-key.json"
-            cd example
+            cd terraform-postgress-gcp/example
             ls -ltr
             terraform init
             terraform plan
