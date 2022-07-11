@@ -16,6 +16,7 @@ pipeline {
             export GOOGLE_APPLICATION_CREDENTIALS="./gcp-key.json"
             cd terraform-postgress-gcp
             ls -ltr
+            terraform --version
             terraform init
             terraform plan
             #terraform apply --auto-approve
